@@ -1,0 +1,67 @@
+doctype html
+html
+	head
+		include partials/head
+	body
+		#home
+		include partials/navigation
+		section#hero
+			.title.
+				Occupez-vous de vos clients.<br>
+				Nous nous occupons de votre personnel.
+			.subtitle.
+				Plannings en ligne - préparation de paie automatisée - administratif simplifié
+			button Essayez maintenant. Gratuitement.
+		section#planning
+			.users.container
+				h2 Ils utilisent Snapshift
+			.planning.container
+				.col
+					.heading.
+						Faites vos plannings en ligne. Bim.<br>
+						Publiez. Bam.<br>
+						C’est sur le mobile de votre staff. Boum.
+					.text.
+						Vous réalisez vos plannings en quelques clics. Les disponibilités de chaque employé, absences prévues et congés s'affichent sur le planning, pour vous éviter de faire des erreurs. Vos employés consultent leurs emplois du temps en ligne, ils sont avertis en temps réel des modifications. En cas d'imprévu vos équipes peuvent même échanger leurs postes.
+				.col
+		section#presences
+			.container
+				.col
+
+				.col
+					.heading.
+						Fini la corvée des paies.<br>
+						Heures, absences, congés : tout est là,<br>
+						automatiquement.
+					.text.
+						Vos employés valident leurs heures réelles en ligne, même sur leur mobile. Vous avez une visibilité en temps réel des heures réalisées. Vos employés suivent leurs heures. Plus de mauvaise surprise à la fin du mois.
+		section#profile
+			.container
+				.col
+					.heading.
+						Contrats, avenants, DPAE, justificatifs, demandes de congés, feuilles de présence : c’est rangé, en ligne.
+					.text.
+						Contrats de travail et avenants, DPAE, Registre Unique du Personnel, congés payés, documents administratifs, feuilles de présences, export paie, accès cabinet comptable.
+				.col
+		section#pricing
+			.title Un tarif unique à 3€ HT / mois par salarié*.
+			.subtitle.
+				30 jours d'essai gratuit, sans carte bancaire.<br>
+				Aucun engagement et la liberté d'interrompre sans préavis.
+			button Démarrer mon essai gratuit
+			.bottom
+				.mention * avec un minimum de 15€
+		section#footer
+			.social
+				a(href="#") FB
+				a(href="#") TW
+			nav.links
+				a(href="#").item Qui sommes nous ?
+				a(href="#").item Presse
+				a(href="#").item Mentions légales
+				a(href="#").item Politique de confidentialité
+				a(href="#").item Contact
+			.logo Snapshift
+			.love Fait maison avec <3 en France
+		script(src="//code.jquery.com/jquery-3.1.0.min.js")
+		script(src="main.js")

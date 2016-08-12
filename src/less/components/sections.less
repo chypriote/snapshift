@@ -1,0 +1,68 @@
+#hero, #pricing {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 70vh;
+
+	.title {
+		color: @text-accent;
+		font-size: 36px;
+		line-height: 48px;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+	.subtitle {
+		color: @text-accent;
+		font-size: 20px;
+		margin-bottom: 35px;
+		line-height: 30px;
+	}
+	.bottom {
+		display: flex;
+		flex-grow: 1;
+		.mention {
+			align-self: flex-end;
+			font-size: 12px;
+		}
+	}
+}
+#hero {
+	background-color: rgba(33, 42, 73, 0.7);
+}
+#pricing {
+	background-color: @text-default;
+	color: @text-accent;
+	padding-top: 110px;
+	padding-bottom: 30px;
+}
+
+.users {
+	background-color: @text-accent;
+	justify-content: center;
+	flex-grow: 0;
+}
+#presences {
+	background-color: @secondary-color;
+	color: @text-accent;
+}
+
+#footer {
+	align-items: center;
+	text-align: center;
+	min-height: 50vh;
+	color: @text-light;
+	font-weight: 500;
+	font-size: 12px;
+	padding-top: 20px;
+	.links {
+		display: flex;
+		margin: 15px 0;
+		.item {
+			padding-left: 10px;
+			&:hover {text-decoration: underline;}
+			&:not(:last-of-type):after {content: '|';color: #c3c6d0;padding-left: 10px;}
+		}
+	}
+	.logo {flex-grow: 1;align-items: center;vertical-align: middle;}
+	.love {font-size: 12px;}
+}
