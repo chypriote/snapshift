@@ -47,17 +47,9 @@
 	background-color: rgba(33, 42, 73, .8);
 }
 
-
-#pricing {
-	background-color: @text-default;
-	color: @text-accent;
-	padding-top: 110px;
-	padding-bottom: 30px;
-}
-
-.users {
+#users {
 	background-color: @text-accent;
-	&.container {
+	.container {
 		justify-content: center;
 		flex-grow: 0;
 		display: flex;
@@ -72,10 +64,24 @@
 	.logo {mix-blend-mode: darken;}
 }
 
+#planning {
+	.img {margin-left: ~"calc(100% - 15rem)";width: 100%;}
+}
+
 #presences {
 	background-color: @secondary-color;
 	color: @text-accent;
+	.img {margin-right: ~"calc(100% - 15rem)";}
 }
+
+#pricing {
+	background-color: @text-default;
+	color: @text-accent;
+	padding-top: 110px;
+	padding-bottom: 30px;
+}
+
+
 
 #footer {
 	align-items: center;
