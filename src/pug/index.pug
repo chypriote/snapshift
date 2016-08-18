@@ -32,11 +32,11 @@ html
 						C’est sur le mobile de votre staff. Boum.
 					.text.
 						Vous réalisez vos plannings en quelques clics. Les disponibilités de chaque employé, absences prévues et congés s'affichent sur le planning, pour vous éviter de faire des erreurs. Vos employés consultent leurs emplois du temps en ligne, ils sont avertis en temps réel des modifications. En cas d'imprévu vos équipes peuvent même échanger leurs postes.
-				.col
-					img.img(src="images/planning.png")
+				.col.img-col
+					img.img.wow.slideInRight(src="images/planning.png")
 		section#presences
 			.container
-				.col
+				.col.img-col
 					img.img(src="images/presences.png")
 				.col
 					.heading.
@@ -52,7 +52,7 @@ html
 						Contrats, avenants, DPAE, justificatifs, demandes de congés, feuilles de présence : c’est rangé, en ligne.
 					.text.
 						Contrats de travail et avenants, DPAE, Registre Unique du Personnel, congés payés, documents administratifs, feuilles de présences, export paie, accès cabinet comptable.
-				.col
+				.col.img-col
 					img.img(src="images/profil.png")
 		section#pricing
 			.title Un tarif unique à 3€ HT / mois par salarié*.
@@ -64,8 +64,10 @@ html
 				.mention * avec un minimum de 15€
 		section#footer
 			.social
-				a(href="#") FB
-				a(href="#") TW
+				a(href="#")
+					img.icon(src="images/fb-icon.svg")
+				a(href="#")
+					img.icon(src="images/tw-icon.svg")
 			nav.links
 				a(href="#").item Qui sommes nous ?
 				a(href="#").item Presse
@@ -73,6 +75,7 @@ html
 				a(href="#").item Politique de confidentialité
 				a(href="#").item Contact
 			.logo Snapshift
-			.love Fait maison avec <3 en France
-		script(src="//code.jquery.com/jquery-3.1.0.min.js")
+			.love Fait maison avec ❤ en France
+		script(src="vendors/jquery.min.js")
+		script(src="vendors/wow.min.js")
 		script(src="main.js")

@@ -66,7 +66,16 @@ gulp.task('images', function(){
 		.pipe(gulp.dest('public/images'));
 });
 
-gulp.task('copy', function(){
+gulp.task('vendors', function () {
+	return gulp.src('src/vendors/**/*')
+	  .pipe(g.plumber({
+			errorHandler: function (error) {console.log(error.message);this.emit('end');}
+		}))
+		.pipe(gulp.dest('public/vendors'))
+		.pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task('copy', ['vendors'], function(){
 	gulp.src('src/fonts/*')
 		.pipe(gulp.dest('public/fonts'))
 		.pipe(browserSync.reload({stream:true}));
