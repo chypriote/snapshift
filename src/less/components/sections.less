@@ -100,6 +100,15 @@
 			&:not(:last-of-type):after {content: '|';color: #c3c6d0;padding-left: 10px;}
 		}
 	}
-	.logo {flex-grow: 1;align-items: center;vertical-align: middle;}
+	.logo {
+		flex-grow: 1;
+		align-items: center;
+		vertical-align: middle;
+		.img {
+			filter: grayscale(100%);
+			width: 100%;
+			max-height: 40px;
+		}
+	}
 	.love {font-size: 12px;}
 }
