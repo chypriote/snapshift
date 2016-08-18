@@ -44,6 +44,7 @@ body {
 h2 {line-height: 1.67;}
 
 .img {max-height: 50vh;}
+.img, .popup-img {box-shadow: 0 0 21px 0 #e2e5ee;}
 .icon {
 	&:hover {fill: @text-hover;}
 	&:first-of-type {padding-right: 15px;}
@@ -52,6 +53,7 @@ h2 {line-height: 1.67;}
 section {
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 	&:not(:first-of-type) {padding: 55px 0;}
 }
 
@@ -61,6 +63,10 @@ section {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	@media (max-width: 980px) {
+		width: 100%;
+		flex-direction: column;
+	}
 	.col {
 		display: flex;
 		flex-direction: column;

@@ -71,7 +71,7 @@
 #presences {
 	background-color: @secondary-color;
 	color: @text-accent;
-	.img {margin-right: ~"calc(100% - 15rem)";}
+	.img {margin-right: ~"calc(100% - 15rem)"; box-shadow: 0 0 21px 0 #2b357a;}
 }
 
 #pricing {
@@ -81,7 +81,21 @@
 	padding-bottom: 30px;
 }
 
-
+#profile {
+	.img-col {
+		position: relative;
+		.img {
+			max-height: 70vh;
+    	margin-left: ~"calc(100% - 10rem)";
+  	}
+		.popup-img {
+			position: absolute;
+			max-height: 55vh;
+			left: 10%;
+			top: 10%;
+		}
+	}
+}
 
 #footer {
 	align-items: center;
@@ -102,8 +116,7 @@
 	}
 	.logo {
 		flex-grow: 1;
-		align-items: center;
-		vertical-align: middle;
+		margin-top: 35px;
 		.img {
 			filter: grayscale(100%);
 			width: 100%;
