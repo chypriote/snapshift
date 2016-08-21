@@ -1,3 +1,22 @@
+/*
+** Typography
+**
+*/
+
+
+h2 {line-height: 1.67;}
+/*! Main text of a session */
+.heading {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.text {
+	font-weight: 300;
+}
+
+/* Used in the hero and pricing sections */
 .main-title {
 	color: @text-accent;
 	font-size: 36px;
@@ -18,27 +37,5 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 1.43;
-	}
-}
-
-#presences {
-	background-color: @secondary-color;
-	color: @text-accent;
-	.img {margin-right: ~"calc(100% - 15rem)"; box-shadow: 0 0 21px 0 #2b357a;}
-}
-
-#profile {
-	.img-col {
-		position: relative;
-		.img {
-			max-height: 70vh;
-    	margin-left: ~"calc(100% - 10rem)";
-  	}
-		.popup-img {
-			position: absolute;
-			max-height: 55vh;
-			left: 10%;
-			top: 10%;
-		}
 	}
 }

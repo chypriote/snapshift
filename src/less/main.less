@@ -6,6 +6,7 @@
 
 @import 'base/normalize';
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700';
+@import 'base/grid';
 
 @text-accent: #ffffff;
 @text-default: #212a49;
@@ -19,9 +20,10 @@
 @background-color: #f8f9fb;
 @background-secondary: #212a49;
 
+@import 'base/typography';
 @import 'components/buttons';
 @import 'components/navigation';
-@import 'components/sections';
+@import 'components/images';
 
 @import 'sections/hero';
 @import 'sections/users';
@@ -46,61 +48,4 @@ body {
 	font-weight: 500;
 	line-height: 20px;
 	overflow-x: hidden;
-}
-
-.icon {
-	&:hover {fill: @text-hover;}
-	&:first-of-type {padding-right: 15px;}
-}
-
-section {
-	display: flex;
-	flex-direction: column;
-	overflow-x: hidden;
-	&:not(:first-of-type) {padding: 55px 0;}
-}
-.container {
-	width: 970px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	@media (max-width: 980px) {
-		width: 100%;
-		flex-direction: column;
-		padding: 0 15px;
-	}
-}
-.col {
-	display: flex;
-	flex-direction: column;
-	flex: 50% 0;
-	padding: 0 10px;
-}
-
-/*! Images Columns */
-.img-col, .col-img {
-	display: block;
-	img {
-		max-height: 50vh;
-		box-shadow: 0 0 21px 0 #e2e5ee;
-	}
-}
-.img-right {
-	margin-left: ~"calc(100% - 20em)";
-}
-.img-left {
-	margin-right: ~"calc(100% - 20em)";
-}
-
-/*! Text Styles */
-h2 {line-height: 1.67;}
-.heading {
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 30px;
-	margin-bottom: 20px;
-}
-.text {
-	font-weight: 300;
 }
