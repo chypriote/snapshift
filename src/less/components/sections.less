@@ -1,84 +1,30 @@
-#hero, #pricing {
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	min-height: 70vh;
-
-	.title {
-		color: @text-accent;
-		font-size: 36px;
-		line-height: 48px;
-		font-weight: 500;
-		margin-bottom: 20px;
-	}
-	.subtitle {
-		color: @text-accent;
-		font-size: 20px;
-		margin-bottom: 35px;
-		line-height: 30px;
-	}
-	.bottom {
-		display: flex;
-		flex-grow: 1;
-		.mention {
-			align-self: flex-end;
-			font-size: 12px;
-		}
+.main-title {
+	color: @text-accent;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	@media (max-width: 768px) {
+		font-size: 24px;
+		line-height: 1.25;
 	}
 }
-
-
-// This is the hero image
-#hero {
-	background: url('images/hero.jpg');
-	background-position-y: 50%;
-	background-size: cover;
-	position: relative;
-	//We have to change the z-index of the childs in order to have them displayed in front of the overlay
-	& > *:not(.background) {z-index: 10;}
-}
-//This is the hero image overlay
-.background {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(33, 42, 73, .8);
-}
-
-#users {
-	background-color: @text-accent;
-	.container {
-		justify-content: center;
-		flex-grow: 0;
-		display: flex;
-		flex-direction: column;
+.sub-title {
+	color: @text-accent;
+	font-size: 20px;
+	margin-bottom: 35px;
+	line-height: 30px;
+	@media (max-width: 768px) {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.43;
 	}
-	.row {
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		margin-top: 20px;
-	}
-	.logo {mix-blend-mode: darken;}
-}
-
-#planning {
-	.img {margin-left: ~"calc(100% - 15rem)";width: 100%;}
 }
 
 #presences {
 	background-color: @secondary-color;
 	color: @text-accent;
 	.img {margin-right: ~"calc(100% - 15rem)"; box-shadow: 0 0 21px 0 #2b357a;}
-}
-
-#pricing {
-	background-color: @text-default;
-	color: @text-accent;
-	padding-top: 110px;
-	padding-bottom: 30px;
 }
 
 #profile {
@@ -95,34 +41,4 @@
 			top: 10%;
 		}
 	}
-}
-
-#footer {
-	align-items: center;
-	text-align: center;
-	min-height: 50vh;
-	color: @text-light;
-	font-weight: 500;
-	font-size: 12px;
-	padding-top: 20px;
-	.links {
-		display: flex;
-		margin: 15px 0;
-		.item {
-			padding-left: 10px;
-			&:hover {color: @text-hover;}
-			&:not(:last-of-type):after {content: '|';color: #c3c6d0;padding-left: 10px;}
-		}
-	}
-	.logo {
-		flex-grow: 1;
-		margin-top: 35px;
-		.img {
-			filter: grayscale(100%);
-			width: 100%;
-			max-height: 40px;
-			box-shadow: none;
-		}
-	}
-	.love {font-size: 12px;}
 }

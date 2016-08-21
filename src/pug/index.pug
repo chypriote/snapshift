@@ -7,22 +7,23 @@ html
 		include partials/navigation
 		section#hero
 			.background
-			.title.
-				Occupez-vous de vos clients.<br>
-				Nous nous occupons de votre personnel.
-			.subtitle.
-				Plannings en ligne - préparation de paie automatisée - administratif simplifié
-			button Essayez maintenant. Gratuitement.
+			.container
+				.main-title.
+					Occupez-vous de vos clients.<br>
+					Nous nous occupons de votre personnel.
+				.sub-title.
+					Plannings en ligne - préparation de paie automatisée - administratif simplifié
+				button Essayez maintenant. Gratuitement.
 		section#users
 			.container
 				h2 Ils utilisent Snapshift
 				.row
-					img(src="http://placehold.it/120x110").logo
-					img(src="http://placehold.it/120x110").logo
-					img(src="http://placehold.it/120x110").logo
-					img(src="http://placehold.it/120x110").logo
-					img(src="http://placehold.it/120x110").logo
-					img(src="http://placehold.it/120x110").logo
+					img(src="http://placehold.it/90x120").logo
+					img(src="http://placehold.it/100x120").logo
+					img(src="http://placehold.it/115x120").logo
+					img(src="http://placehold.it/95x120").logo
+					img(src="http://placehold.it/140x120").logo
+					img(src="http://placehold.it/150x120").logo
 		section#planning
 			.container
 				.col
@@ -33,11 +34,11 @@ html
 					.text.
 						Vous réalisez vos plannings en quelques clics. Les disponibilités de chaque employé, absences prévues et congés s'affichent sur le planning, pour vous éviter de faire des erreurs. Vos employés consultent leurs emplois du temps en ligne, ils sont avertis en temps réel des modifications. En cas d'imprévu vos équipes peuvent même échanger leurs postes.
 				.col.img-col
-					img.img.wow.slideInRight(src="images/planning.png")
+					img.img.img-right.wow.slideInRight(src="images/planning.png")
 		section#presences
 			.container
 				.col.img-col
-					img.img(src="images/presences.png")
+					img.img.img-left(src="images/presences.png")
 				.col
 					.heading.
 						Fini la corvée des paies.<br>
@@ -54,30 +55,32 @@ html
 						Contrats de travail et avenants, DPAE, Registre Unique du Personnel, congés payés, documents administratifs, feuilles de présences, export paie, accès cabinet comptable.
 				.col.img-col
 					img.popup-img.wow.zoomIn(src="images/contrat.png")
-					img.img(src="images/profil.png")
+					img.img.img-right(src="images/profil.png")
 		section#pricing
-			.title Un tarif unique à 3€ HT / mois par salarié*.
-			.subtitle.
-				30 jours d'essai gratuit, sans carte bancaire.<br>
-				Aucun engagement et la liberté d'interrompre sans préavis.
-			button Démarrer mon essai gratuit
-			.bottom
-				.mention * avec un minimum de 15€
+			.container
+				.main-title Un tarif unique à 3€ HT / mois par salarié*.
+				.sub-title.
+					30 jours d'essai gratuit, sans carte bancaire.<br>
+					Aucun engagement et la liberté d'interrompre sans préavis.
+				button Démarrer mon essai gratuit
+				.bottom
+					.mention * avec un minimum de 15€
 		section#footer
-			.social
-				a(href="#")
-					img.icon(src="images/fb-icon.svg")
-				a(href="#")
-					img.icon(src="images/tw-icon.svg")
-			nav.links
-				a(href="#").item Qui sommes nous ?
-				a(href="#").item Presse
-				a(href="#").item Mentions légales
-				a(href="#").item Politique de confidentialité
-				a(href="#").item Contact
-			.logo
-				img.img(src="images/logo.svg")
-			.love Fait maison avec ❤ en France
+			.container
+				.social
+					a(href="#")
+						img.icon(src="images/fb-icon.svg")
+					a(href="#")
+						img.icon(src="images/tw-icon.svg")
+				nav.links
+					a(href="#").item Qui sommes nous ?
+					a(href="#").item Presse
+					a(href="#").item Mentions légales
+					a(href="#").item Politique de confidentialité
+					a(href="#").item Contact
+				.logo
+					img.img(src="images/logo.svg")
+				.love Fait maison avec ❤ en France
 		script(src="vendors/jquery.min.js")
 		script(src="vendors/wow.min.js")
 		script(src="main.js")

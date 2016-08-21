@@ -1,10 +1,9 @@
 new WOW().init();
 
-window.addEventListener("scroll", function () {
-	if (window.pageYOffset >= 500){
+$(window).scroll(function() {
+	if ($(this).scrollTop() >= 500){
 		$('.nav').addClass('scrolled');
 	} else{
 		$('.nav').removeClass('scrolled');
 	}
-
-})
+});
