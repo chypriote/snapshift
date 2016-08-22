@@ -16,9 +16,16 @@
 }
 
 #footer {
+	@media (max-width: 768px) {
+		padding-top: 20px;
+	}
 	.links {
 		display: flex;
 		margin: 15px 0;
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 		.item {
 			padding-left: 10px;
 			&:hover {color: @text-hover;}

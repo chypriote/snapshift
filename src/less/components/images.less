@@ -8,6 +8,10 @@
 	img {
 		max-height: 50vh;
 		box-shadow: 0 0 21px 0 #e2e5ee;
+		@media (max-width: 768px) {
+			margin: 0;
+			max-width: 100%;
+		}
 	}
 }
 .img-right {
@@ -19,6 +23,7 @@
 
 
 .icon {
+	display: inline-block;
 	&:hover {fill: @text-hover;}
 	&:first-of-type {padding-right: 15px;}
 }

@@ -6,6 +6,9 @@
 #users {
 	background-color: @text-accent;
 	padding-bottom: 80px;
+	@media (max-width: 768px) {
+		padding-bottom: 60px;
+	}
 	.container {
 		justify-content: center;
 		flex-grow: 0;
@@ -17,6 +20,19 @@
 		width: 100%;
 		justify-content: space-between;
 		margin-top: 30px;
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
 	}
-	.logo {mix-blend-mode: darken;}
+	.logo {
+		mix-blend-mode: darken;
+		display: flex;
+		align-items: center;
+		@media (max-width: 768px) {
+			flex: 30% 0 0;
+			margin-bottom: 1em;
+			justify-content: center;
+			img {max-width: 100%;}
+		}
+	}
 }
