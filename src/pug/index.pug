@@ -10,7 +10,7 @@ html
 			.container
 				.main-title.
 					Occupez-vous de vos clients.<br>
-					Nous nous occupons de votre personnel.
+					On s'occupe de votre personnel.
 				.sub-title.
 					Plannings en ligne - préparation de paie automatisée - administratif simplifié
 				button Essayez maintenant. Gratuitement.
@@ -40,7 +40,7 @@ html
 					.text.
 						Vous réalisez vos plannings en quelques clics. Les disponibilités de chaque employé, absences prévues et congés s'affichent sur le planning, pour vous éviter de faire des erreurs. Vos employés consultent leurs emplois du temps en ligne, ils sont avertis en temps réel des modifications. En cas d'imprévu vos équipes peuvent même échanger leurs postes.
 				.col.img-col
-					img.img.img-right.wow.slideInRight(src="images/planning.png")
+					img.img.img-right.img-planning.notVisible(src="images/planning.png")
 		section#presences
 			.container
 				.col.img-col
@@ -60,7 +60,7 @@ html
 					.text.
 						Contrats de travail et avenants, DPAE, Registre Unique du Personnel, congés payés, documents administratifs, feuilles de présences, export paie, accès cabinet comptable.
 				.col.img-col
-					img.popup-img.wow.zoomIn(src="images/contrat.png")
+					img.popup-img.img-contract.notVisible(src="images/contrat.png")
 					img.img.img-right(src="images/profil.png")
 		section#pricing
 			.container
@@ -88,5 +88,6 @@ html
 					img.img(src="images/logo.svg")
 				.love Fait maison avec ❤ en France
 		script(src="vendors/jquery.min.js")
+		script(src="vendors/jquery.waypoints.min.js")
 		script(src="vendors/wow.min.js")
 		script(src="main.js")
