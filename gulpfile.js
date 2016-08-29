@@ -24,7 +24,7 @@ gulp.task('pug', function(){
 		.pipe(g.plumber({
 			errorHandler: function (error) {console.log(error.message);this.emit('end');}
 		}))
-		.pipe(g.pug({}))
+		.pipe(g.pug({pretty: true}))
 		.pipe(gulp.dest('public/'))
 		.pipe(browserSync.reload({stream:true}));
 });
