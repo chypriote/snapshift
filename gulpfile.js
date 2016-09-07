@@ -35,9 +35,9 @@ gulp.task('styles', function(){
 			errorHandler: function (error) {console.log(error.message);this.emit('end');}
 		}))
 		.pipe(g.less())
-		.pipe(g.autoprefixer({browsers: ['last 2 versions', 'ios_saf 6.1'], cascade: false}))
+		.pipe(g.autoprefixer({browsers: ['last 2 versions'], cascade: true}))
 		// .pipe(g.rename({suffix: '.min'}))
-		.pipe(g.cssnano())
+		// .pipe(g.cssnano())
 		.pipe(gulp.dest('public/'))
 		.pipe(browserSync.reload({stream:true}))
 });
