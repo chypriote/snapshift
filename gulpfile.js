@@ -35,7 +35,7 @@ gulp.task('styles', function(){
 			errorHandler: function (error) {console.log(error.message);this.emit('end');}
 		}))
 		.pipe(g.less())
-		.pipe(g.autoprefixer({browsers: ['last 2 versions'], cascade: true}))
+		.pipe(g.autoprefixer({browsers: ['last 5 versions'], cascade: true}))
 		// .pipe(g.rename({suffix: '.min'}))
 		// .pipe(g.cssnano())
 		.pipe(gulp.dest('public/'))
