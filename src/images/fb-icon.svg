@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-    <title>E85816FD-8D6A-4F6F-B360-B9FDB51CB7AA</title>
-    <desc>Created with sketchtool.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icones" transform="translate(-230.000000, -407.000000)" fill="#C3C6D0">
-            <path d="M242,431 C248.627417,431 254,425.627417 254,419 C254,412.372583 248.627417,407 242,407 C235.372583,407 230,412.372583 230,419 C230,425.627417 235.372583,431 242,431 Z M245,415 L244,415 C243.059694,414.99275 242.894331,415.4135 243,416 L243,417 L245,417 L245,419 L243,419 L243,425 L241,425 L241,419 L239,419 L239,417 L241,417 L241,416 C240.773499,413.99375 241.847274,413 243,413 C244.165965,413 244.81153,413.05775 245,413 L245,415 Z" id="Combined-Shape"></path>
-        </g>
-    </g>
-</svg>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>E85816FD-8D6A-4F6F-B360-B9FDB51CB7AA</title><path d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12zm3-16h-1c-.94-.007-1.106.413-1 1v1h2v2h-2v6h-2v-6H9v-2h2V9c-.227-2.006.847-3 2-3 1.166 0 1.812.058 2 0v2z" fill="#C3C6D0" fill-rule="evenodd"/></svg>
