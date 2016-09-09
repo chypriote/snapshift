@@ -1,0 +1,45 @@
+/*
+** About us page
+**
+*/
+
+#hero-aboutus {
+	background: url('images/hero-team.jpg');
+	background-position-y: 0;
+	background-size: cover;
+	position: relative;
+
+	& > *:not(.background) {z-index: 10;}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		min-height: 50vh;
+	}
+}
+
+#about-us {
+	background-color: @background-color;
+	color: @background-secondary;
+	.container {
+		display: block;
+	}
+	.row {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+	.text {
+		margin-bottom: 1em;
+	}
+	.img {
+		box-shadow: 0 0 0 0 #2b357a;
+	}
+	.img-col img, .col-img img {
+		max-height: 25vh;
+		box-shadow: 0 0 0 0 #e2e5ee;
+	}
+}
